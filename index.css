@@ -1,0 +1,118 @@
+
+@font-face {
+    font-family: "Cursed Timer";
+    src: url("/assets/fonts/CursedTimerUlil-Aznm.ttf");
+}
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 70px;
+    margin: 60px;
+
+    background-color: #202C39;
+    font-family: CursedTimerUlil-Aznm;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #EEEEEE;
+    gap: 70px;
+}
+
+.scoreboard-wrapper {
+    text-align: center;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0px 0px -10px 0px;
+    border: solid;
+    border-style: outset;
+    color: #9F1239;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 160px;
+    background: #080001;
+    margin: 25px 0px;
+    border-radius: 5px;
+}
+
+.scoreboard h4 {
+    font-family: "Cursed Timer", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5.625rem;
+    color: blue;
+    text-shadow: 4px 2.5px 1px #9F1239;
+    transition: 250ms ease;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 11px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    color: #F1DAC4;
+    font-size: 1.125rem;
+    font-family: "Cursed Timer", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    border-radius: 5px;
+    transition: 250ms ease;
+    cursor: pointer;
+}
+
+button:hover {
+    scale: 1.02;
+    transition: 250ms ease;
+    background-color: #11162d;
+    color: #E0F2FE;
+    border-color: #F0F9FF;
+}
+
+button:active {
+    transition: 50ms;
+    scale: 1.1;
+}
+
+button.reset {
+    width: 125px;
+    background-color: red;
+    color: #F1DAC4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: auto;
+    border: 5px solid black;
+}
+
+reset:hover {
+    scale: 1.02;
+    transition: 250ms ease;
+    background-color: #11162d;
+    color: #E0F2FE;
+    border-color: #F0F9FF;
+    
+}
+
+.winner {
+    scale: 1.3;
+    color: #16f75f !important;
+    text-shadow: 4px 2.5px 1px #06a539 !important;
+    transition: 50ms ease-out;
+}
